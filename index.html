@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STON.fi Vibe Coding Hackathon</title>
+    <meta
+      name="description"
+      content="Build your first TON app in one weekend with the STON.fi Vibe Coding Hackathon."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=5" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#hero" aria-label="STON.fi Vibe Coding Hackathon home">
+          <img class="brand-logo" src="./assets/ston-fi-light.svg" alt="STON.fi" />
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#qualification">Qualification</a>
+          <a href="#tracks">Rewards</a>
+          <a href="#agenda">Agenda</a>
+          <a href="#setup">Setup</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="#agenda">Apply Now</a>
+          <a class="button button-secondary" href="https://ston.fi/" target="_blank" rel="noreferrer">Go to Main Site</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <img
+            class="hero-deco hero-coin hero-coin-left-top"
+            src="./assets/hero-coin-left.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="hero-deco hero-star hero-star-left-top"
+            src="./assets/hero-star-blue.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="hero-deco hero-star hero-star-left-bottom"
+            src="./assets/hero-star-blue.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="hero-deco hero-coin hero-coin-right-top"
+            src="./assets/hero-coin-right.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="hero-deco hero-star hero-star-right-top"
+            src="./assets/hero-star-blue.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="hero-copy">
+            <p class="eyebrow">STON.fi Vibe Coding Hackathon</p>
+            <div class="countdown" aria-live="polite">
+              <p class="countdown-label">hackathon begins in</p>
+              <div class="countdown-timer" id="countdown-timer">
+                <div class="countdown-unit">
+                  <span class="countdown-value" data-unit="days">00</span>
+                  <span class="countdown-name">days</span>
+                </div>
+                <div class="countdown-unit">
+                  <span class="countdown-value" data-unit="hours">00</span>
+                  <span class="countdown-name">hours</span>
+                </div>
+                <div class="countdown-unit">
+                  <span class="countdown-value" data-unit="minutes">00</span>
+                  <span class="countdown-name">minutes</span>
+                </div>
+                <div class="countdown-unit">
+                  <span class="countdown-value" data-unit="seconds">00</span>
+                  <span class="countdown-name">seconds</span>
+                </div>
+              </div>
+            </div>
+            <h1>
+              <span class="hero-line hero-line-dark">Build your first</span>
+              <span class="hero-line hero-line-gradient">TON app in one weekend</span>
+            </h1>
+            <div class="hero-body">
+              <h2 class="hero-subheading">Build with AI agents and launch a real TON product.</h2>
+              <p class="hero-lead">
+                No coding experience required. Develop the skills to use AI coding
+                agents to build with STON.fi on TON. Set up your tools, build your
+                app, ship it live, and submit your weekend build for rewards.
+              </p>
+            </div>
+            <div class="hero-scroll" aria-hidden="true">⌄</div>
+          </div>
+        </section>
+
+        <section class="content-grid section-card section-alt" id="qualification">
+          <div class="section-heading">
+            <p class="eyebrow">Qualification</p>
+            <h2>Who this hackathon is for</h2>
+            <p>
+              We are selecting a focused group of builders who are ready to learn,
+              commit real time, and submit a working TON product by the end of the
+              hackathon.
+            </p>
+          </div>
+
+          <div class="card-grid two-up">
+            <article class="info-card">
+              <h3>25 seats available</h3>
+              <p class="info-copy">
+                This cohort is limited to 25 participants so we can stay hands-on
+                during the build weekend. If you are not accepted this round, you
+                will still have the chance to apply for upcoming hackathons.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Show your commitment</h3>
+              <p class="info-copy">
+                We are looking for people who are genuinely ready to invest the
+                time needed to build, finish, and submit a product, not just browse
+                the materials.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Applications are reviewed</h3>
+              <p class="info-copy">
+                Everyone who fills out the application is reviewed for acceptance.
+                We use the application to understand your motivation and whether
+                you are ready to participate fully.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Beginners are welcome</h3>
+              <p class="info-copy">
+                You do not need to be a programmer to join. We are also open to
+                new builders who want to learn vibe coding on TON and use AI tools
+                to create their first product.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-grid section-card" id="tracks">
+          <div class="section-heading">
+            <p class="eyebrow">Rewards</p>
+            <h2>Choose your track and ship a working TON product</h2>
+            <p>
+              Track rewards require a real integration, and every valid
+              submission can still reach the participation pool.
+            </p>
+          </div>
+
+          <div class="card-grid three-up">
+            <article class="reward-card highlight">
+              <span class="card-kicker">STON.fi track</span>
+              <div class="reward-placements">
+                <div class="reward-placement">
+                  <span class="reward-rank">1st</span>
+                  <span class="reward-amount">$250</span>
+                </div>
+                <div class="reward-placement">
+                  <span class="reward-rank">2nd</span>
+                  <span class="reward-amount">$150</span>
+                </div>
+                <div class="reward-placement">
+                  <span class="reward-rank">3rd</span>
+                  <span class="reward-amount">$100</span>
+                </div>
+              </div>
+              <p class="reward-copy">
+                To qualify, use either the STON.fi DEX SDK, Omniston SDK, or API.
+              </p>
+            </article>
+
+            <article class="reward-card">
+              <span class="card-kicker">Tonstakers track</span>
+              <div class="reward-summary">
+                <span class="reward-rank">1st</span>
+                <span class="reward-amount">$200</span>
+              </div>
+              <p class="reward-copy">
+                To qualify, use the Tonstakers SDK in your submitted product.
+              </p>
+            </article>
+
+            <article class="reward-card">
+              <span class="card-kicker">For all</span>
+              <div class="reward-summary">
+                <span class="reward-rank">Pool</span>
+                <span class="reward-amount">$500</span>
+              </div>
+              <p class="reward-copy">
+                Distributed equally to all participants who follow the submission
+                criteria.
+              </p>
+            </article>
+          </div>
+
+          <div class="criteria-card">
+            <h3>Submission criteria</h3>
+            <div class="criteria-grid">
+              <span>Functional working app</span>
+              <span>TON integration using STON.fi or Tonstakers</span>
+              <span>Clear use case</span>
+              <span>Video presentation</span>
+              <span>GitHub repository</span>
+              <span>Live production URL</span>
+            </div>
+            <p class="criteria-note">
+              Projects must be new. Established products built before the
+              hackathon are not eligible for rewards.
+            </p>
+          </div>
+        </section>
+
+        <section class="content-grid section-card" id="agenda">
+          <div class="section-heading">
+            <p class="eyebrow">Agenda</p>
+            <h2>What happens from Thursday to Monday</h2>
+            <p>
+              The hackathon runs across five days with workshops, office hours,
+              weekend support, and a Monday morning submission deadline.
+              Workshops are recorded as well, so participants in different time
+              zones can catch up.
+            </p>
+          </div>
+
+          <div class="card-grid three-up">
+            <article class="info-card agenda-card">
+              <span class="card-kicker">Thursday</span>
+              <h3>Kickoff + STON.fi workshop</h3>
+              <p class="info-copy">
+                The program begins on Thursday with the opening session and a
+                dedicated STON.fi workshop to get everyone aligned on the stack.
+              </p>
+            </article>
+
+            <article class="info-card agenda-card">
+              <span class="card-kicker">Friday</span>
+              <h3>Tonstakers workshop</h3>
+              <p class="info-copy">
+                Friday continues with the Tonstakers workshop so participants can
+                explore the second integration track and choose their direction.
+              </p>
+            </article>
+
+            <article class="info-card agenda-card">
+              <span class="card-kicker">Friday</span>
+              <h3>Open office hours</h3>
+              <p class="info-copy">
+                Participants can book a call with an expert throughout the day on
+                Friday to unblock setup, product ideas, and technical questions
+                early.
+              </p>
+            </article>
+
+            <article class="info-card agenda-card">
+              <span class="card-kicker">Weekend</span>
+              <h3>Build with continued support</h3>
+              <p class="info-copy">
+                Participants spend the weekend building online with continued
+                support, so they can keep moving even after the live sessions end.
+              </p>
+            </article>
+
+            <article class="info-card agenda-card">
+              <span class="card-kicker">Monday · 9 AM CET</span>
+              <h3>Submission deadline</h3>
+              <p class="info-copy">
+                Everyone should arrive at the weekend prepared with tools,
+                accounts, and setup complete, then submit their finished project by
+                9:00 AM CET on Monday.
+              </p>
+            </article>
+
+            <article class="info-card agenda-card">
+              <span class="card-kicker">Monday</span>
+              <h3>Demo day</h3>
+              <p class="info-copy">
+                Participants can present their project on Monday, but presenting
+                is not mandatory. Winners are judged based on their submission,
+                not on the demo day presentation itself.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-grid section-card section-alt" id="setup">
+          <div class="section-heading">
+            <p class="eyebrow">Setup</p>
+            <h2>Sneak peak on setup before building</h2>
+            <p>
+              Set up your environment, connect an AI agent, and bring in the TON
+              tools you need for a working MVP.
+            </p>
+          </div>
+
+          <div class="card-grid two-up">
+            <article class="info-card">
+              <div class="card-header">
+                <span class="card-kicker">01</span>
+                <h3>Getting started</h3>
+              </div>
+              <ul>
+                <li>
+                  Download your coding editor either
+                  <a href="https://cursor.com/" target="_blank" rel="noreferrer">Cursor</a>
+                  or
+                  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">Visual Studio Code</a>
+                </li>
+                <li>
+                  Sign up and create a repository on
+                  <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                </li>
+                <li>
+                  Sign up for <a href="https://vercel.com/" target="_blank" rel="noreferrer">Vercel</a>
+                  to push a live production URL
+                </li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <div class="card-header">
+                <span class="card-kicker">02</span>
+                <h3>AI agents</h3>
+              </div>
+              <ul>
+                <li>
+                  Use <a href="https://openai.com/codex/" target="_blank" rel="noreferrer">Codex</a>,
+                  <a href="https://claude.ai/" target="_blank" rel="noreferrer">Claude</a>,
+                  <a href="https://github.com/copilot" target="_blank" rel="noreferrer">GitHub Copilot</a>,
+                  or <a href="https://bolt.new/" target="_blank" rel="noreferrer">Bolt</a> &amp;
+                  connect to your code editor
+                </li>
+                <li>
+                  Or use development platforms
+                  <a href="https://replit.com/" target="_blank" rel="noreferrer">Replit</a>
+                  or <a href="https://lovable.dev/" target="_blank" rel="noreferrer">Lovable</a>
+                </li>
+                <li>
+                  <a href="https://cursor.com/" target="_blank" rel="noreferrer">Cursor</a>
+                  and
+                  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">Visual Studio Code</a>
+                  AI features can support you too
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-brand-block">
+            <a class="footer-brand" href="#hero" aria-label="STON.fi Vibe Coding Hackathon home">
+              <img class="footer-logo" src="./assets/ston-fi-light.svg" alt="STON.fi" />
+            </a>
+            <p class="footer-copy">
+              Instantly swap Toncoin for any coin<br />or token at the best rate
+            </p>
+            <div class="footer-socials" aria-label="STON.fi social links">
+              <a class="footer-icon" href="https://t.me" target="_blank" rel="noreferrer"><img src="./assets/footer-telegram.svg" alt="Telegram" /></a>
+              <a class="footer-icon" href="https://t.me" target="_blank" rel="noreferrer"><img src="./assets/footer-telegram-chat.svg" alt="Telegram chat" /></a>
+              <a class="footer-icon" href="https://x.com" target="_blank" rel="noreferrer"><img src="./assets/footer-twitter.svg" alt="Twitter" /></a>
+              <a class="footer-icon" href="https://github.com" target="_blank" rel="noreferrer"><img src="./assets/footer-github.svg" alt="GitHub" /></a>
+              <a class="footer-icon" href="https://discord.gg" target="_blank" rel="noreferrer"><img src="./assets/footer-discord.svg" alt="Discord" /></a>
+              <a class="footer-icon" href="https://www.reddit.com" target="_blank" rel="noreferrer"><img src="./assets/footer-reddit.svg" alt="Reddit" /></a>
+              <a class="footer-icon" href="https://www.linkedin.com" target="_blank" rel="noreferrer"><img src="./assets/footer-linkedin.svg" alt="LinkedIn" /></a>
+              <a class="footer-icon" href="https://www.youtube.com" target="_blank" rel="noreferrer"><img src="./assets/footer-youtube.svg" alt="YouTube" /></a>
+            </div>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="https://app.ston.fi" target="_blank" rel="noreferrer">Swap</a>
+            <a href="https://app.ston.fi" target="_blank" rel="noreferrer">Pools</a>
+            <a href="https://app.ston.fi" target="_blank" rel="noreferrer">Stake</a>
+          </nav>
+        </div>
+
+        <div class="footer-rule"></div>
+
+        <div class="footer-meta">
+          <p class="footer-ton">
+            Based on
+            <img src="./assets/footer-ton-logo.svg" alt="TON" />
+            TON
+          </p>
+          <p>
+            Data provided by
+            <a href="https://www.coingecko.com" target="_blank" rel="noreferrer">CoinGecko</a>
+            and <a href="https://dyor.io" target="_blank" rel="noreferrer">DYOR</a>
+          </p>
+        </div>
+
+        <p class="footer-disclaimer">
+          Disclaimer: Nothing on this site is investment advice. All information is
+          for informational purposes only. You should not construe any such
+          information or other material as legal, tax, investment, financial, or
+          other advice. Nothing contained on our site constitutes a solicitation,
+          recommendation, endorsement, or offer by STON.fi or any third party
+          service provider to buy or sell any assets, digital coins and tokens,
+          securities or other financial instruments in this or in any other
+          jurisdiction in which such solicitation or offer would be unlawful under
+          the securities laws of such jurisdiction. Please view Terms of use for
+          more information.
+        </p>
+
+        <div class="footer-rule"></div>
+
+        <p class="footer-bottom-mark">STON.fi</p>
+      </footer>
+    </div>
+    <script>
+      const countdownRoot = document.getElementById("countdown-timer");
+
+      if (countdownRoot) {
+        const targetTime = Date.UTC(2026, 3, 9, 17, 0, 0);
+        const values = {
+          days: countdownRoot.querySelector('[data-unit="days"]'),
+          hours: countdownRoot.querySelector('[data-unit="hours"]'),
+          minutes: countdownRoot.querySelector('[data-unit="minutes"]'),
+          seconds: countdownRoot.querySelector('[data-unit="seconds"]'),
+        };
+
+        const format = (value) => String(value).padStart(2, "0");
+
+        const updateCountdown = () => {
+          const now = Date.now();
+          const remaining = Math.max(0, targetTime - now);
+
+          const days = Math.floor(remaining / 86400000);
+          const hours = Math.floor((remaining % 86400000) / 3600000);
+          const minutes = Math.floor((remaining % 3600000) / 60000);
+          const seconds = Math.floor((remaining % 60000) / 1000);
+
+          values.days.textContent = format(days);
+          values.hours.textContent = format(hours);
+          values.minutes.textContent = format(minutes);
+          values.seconds.textContent = format(seconds);
+        };
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      }
+
+      const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
+
+      if (navLinks.length > 0) {
+        const setActiveNavLink = (hash) => {
+          navLinks.forEach((link) => {
+            link.classList.toggle("is-active", link.getAttribute("href") === hash);
+          });
+        };
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            setActiveNavLink(link.getAttribute("href"));
+          });
+        });
+
+        setActiveNavLink(window.location.hash || "#qualification");
+
+        window.addEventListener("hashchange", () => {
+          setActiveNavLink(window.location.hash || "#qualification");
+        });
+      }
+    </script>
+  </body>
+</html>

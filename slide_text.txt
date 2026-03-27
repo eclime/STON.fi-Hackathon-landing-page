@@ -1,0 +1,436 @@
+--- PAGE 1 ---
+STON.fi Vibe
+Coding Hackathon
+Build your first TON app in one weekend
+organizer sponsor
+
+--- PAGE 2 ---
+Agenda
+01
+02
+03
+04
+05
+06
+07
+About STON.fi
+What is Vibe Coding?
+Setup & Tools
+Build Your Idea
+Develop & Integrate
+Test & Launch
+Submit & Present
+
+--- PAGE 3 ---
+STON.fi
+AMM protocol on TON
+Your protocol access to pools, swaps & liquidity
+Swaps are aggregated using Omniston offering the best routed price.
+
+--- PAGE 4 ---
+Don
+’t need to
+b
+e a developer anymore
+AI agents program for you
+guide your agent to build any product you imagine
+
+--- PAGE 5 ---
+AI usage in
+current
+occupational
+segments
+Source: https://www.anthropic.com/research/labor-market-impacts
+
+--- PAGE 6 ---
+Getting started
+1) download: Cursor or Visual Studio Code
+This is your code editor/environment
+2) signup: Github
+Create your project repository
+3) signup: Vercel
+Allows you to push to a live url on production
+
+--- PAGE 7 ---
+AI agents
+1) download/signup: Codex, Claude, Github Copilot or Bolt
+These are coding agents, you must connect them to your coding editor
+or signup: Riplit or Lovable
+AI development platforms, don’t need to use seperate coding environment
+Note: Cursor & Visual Studio Code has built in AI, you can use that also to ask
+questions for help
+
+--- PAGE 8 ---
+Additional tools
+Ton Tech: AppKit
+wallet connection, authorization,
+balance tracking, asset transfers,
+and data signing
+Signup: TonAPI
+Fetch on-chain data, balances,
+transactions, and token analytics
+Install: Tonkeeper
+Utulize browser extension for
+testing on your localhost & public
+URL
+Signup: Privy
+Allows to create a TON embedded
+wallet
+
+--- PAGE 9 ---
+What you should acheive
+by end of Friday
+☑
+☑
+☑
+☑
+☑
+Code environment setup: ex. Cursor
+AI agent downloaded to desktop: ex. Codex
+Project scaffolded so can be pushed to Github
+Tonkeeper wallet extension (browser)
+Live localhost for testing
+
+--- PAGE 10 ---
+Rewards : STON.fi track
+to qualify need to use either STON.fi
+DEX SDK, Omnsiton SDK or API
+Prizes Submission criteria
+1st place: $250
+• Functional working app
+2nd place: $150
+•
+TON integration
+3rd place: $100
+•
+Clear use case
+•
+Video presentation
+•
+Github repo and live URL
+note: must be a new project, established products built prior won’t be accepted for the rewards
+
+--- PAGE 11 ---
+Rewards : Tonstakers Track
+to qualify need to use Tonstakers SDK
+Prizes Submission criteria
+1st place: $200
+• Functional working app
+•
+TON integration
+•
+Clear use case
+•
+Video presentation
+•
+Github repo and live URL
+note: must be a new project, established products built prior won’t be accepted for the rewards
+
+--- PAGE 12 ---
+Rewards : For all
+regardless if you choose both tracks or
+just one in your submission
+Participation pool: $500
+Submission criteria
+• Functional working app
+•
+TON integration
+•
+Clear use case
+•
+Video presentation
+•
+Github repo and live URL
+note: must be a new project, established products built prior won’t be accepted for the rewards
+
+--- PAGE 13 ---
+Help your agent by sharing
+STON.fi docs:
+Docs: https://docs.ston.fi/
+Some important categores:
+Swaps (fetch all live tokens):
+Omniston SDK: Swap aggregator
+Omnsiton widget: Swap aggregator where STON.fi
+supports backend maintenance
+Pools
+Liquidity guide: Provide & exit pools
+API
+API: Token data, pools, pricing & analytics
+
+--- PAGE 14 ---
+Learn
+by building & sharing
+Learn by building
+•
+•
+when stuck, ask the agent
+for help
+you will learn during the
+process
+Share your progress
+•
+•
+•
+tweet your progress
+when submission is complete
+share your recording and url
+tag @ston
+fi & @tonstakers
+_
+for retweets
+
+--- PAGE 15 ---
+Project examples
+Gamefi/token utility product
+•
+•
+create a game that needs a
+token to access or explore
+integrate a swap for your
+token from a pool on STON.fi
+Wallet
+•
+•
+create a TON wallet using Privy
+& add swaps and staking
+think of something unique making
+you different from other wallets
+
+--- PAGE 16 ---
+Let’s start.
+Your oneliner.
+I am building a (TYPE OF APP)
+For (USER)
+that solves (PROBLEM)
+by (SOLUTION)
+
+--- PAGE 17 ---
+Let’s start.
+Your oneliner.
+I am building a (TYPE OF APP)
+For (USER)
+that solves (PROBLEM)
+by (SOLUTION)
+I am building a self-custodial RWA
+wallet for users without access to
+U.S. stocks that solves limited
+market access, high fees, and
+regulatory barriers by enabling
+buying, selling, and earning yield
+on xstocks without KYC.
+
+--- PAGE 18 ---
+From idea to MVP:think of a problem…
+then how to solve it…
+identify your tagret user…
+list your key features…
+
+--- PAGE 19 ---
+•
+•
+From idea to MVP:
+think of a problem…
+then how to solve it…
+identify your tagret user…
+list your key features…
+Problem: Many people in the
+world lack access to U.S. stocks
+due to lack of local brokerages,
+high cross-border transaction
+fees & complex tax regulation.
+Solution: A wallet focused on
+xStocks for buying, selling &
+earning yield without KYC.
+•
+•
+Target User: those who don’t
+have access to US stocks due to
+restricted country resources or
+sanctions.
+Key features: swap, pools, token
+balance, send & receive &
+transaction history.
+
+--- PAGE 20 ---
+Expand your idea into a prompt
+Questions
+•
+•
+•
+•
+What is the app’s core purpose?
+What can users do (key features)?
+What should the main screen include?
+Any UI requirements (colors, typography, style)
+Note: Wallet integration will be added later
+
+--- PAGE 21 ---
+Expand your idea into a prompt
+Prompt:
+Build a web app for a self-custodial RWA
+wallet.
+Core purpose: A wallet that allows users
+to access and manage tokenized U.S. stocks
+(xstocks), gold, silver, and stablecoins
+without KYC.
+Key features:
+Users can swap assets, provide liquidity
+to earn yield, view token balances, send
+and receive assets, and track transaction
+history.
+Main screen should include:
+Portfolio overview with balances, asset list
+(xStocks, stables, commodities), quick
+actions (Swap, Send, Receive, Earn), and a
+simple price chart per asset.
+UI requirements:
+Dark theme using blue (#0180FF, #3DB1FF) and
+purple (#7354F2) accents, clean modern
+typography, minimal design similar to a DeFi
+wallet dashboard.
+note: you can share a link to a webapp design you like
+& ask the agent to theme the UI design around it
+
+--- PAGE 22 ---
+Expand your idea into a prompt
+•
+•
+•
+•
+•
+List main screens and their purpose
+Define key actions per screen
+Optional: add a simple wireframe
+Include user flows to guide AI output
+List links to docs for integrations
+
+--- PAGE 23 ---
+Expand your idea into a prompt
+Prompt:
+Integrations (use these docs):
+Embedded Wallet (Privy):https://docs.privy.io/recipes/use-tier-2#ton
+STON.fi Omniston SDK (Swaps):
+https://docs.ston.fi/developer-section/dex/omniston
+TON API (balances, transactions): https://tonapi.io/
+TON Connect (AppKit): https://ton.org/docs/develop/dapps/ton-connect
+
+--- PAGE 24 ---
+Build Phase
+What to prioritize
+•
+Focus on getting your main feature working end-to-end first.
+•
+Use the AI iteratively — refine, adjust, and improve step by step.
+•
+Frequently push updates to GitHub to track progress and stay
+organized.
+TIP: Start with a strong initial prompt — it guides the AI and keeps your
+build aligned as you iterate.
+
+--- PAGE 25 ---
+Connect your app to TON
+Purpose: Enable your app to connect users and interact with the
+TON blockchain.
+1.
+2.
+3.
+4.
+Ensure a TON wallet (e.g. Tonkeeper) is installed.
+Use your AI tool to integrate wallet connection into your app.
+Verify the connection by fetching wallet data or sending a test
+transaction.
+Optionally, add support for swaps, tokens, or other DeFi
+features.
+
+--- PAGE 26 ---
+Test & de
+bug your app
+•
+•
+•
+•
+•
+Test each feature on localhost after generating it
+If something breaks (bug, UI issue, error), screenshot and describe
+it to the AI agent
+Iterate with the AI to fix issues quickly
+Always test again in production (your live URL)
+Localhost and production can behave differently, so verify both
+
+--- PAGE 27 ---
+Create your brand identity
+For Brand:
+•
+•
+•
+Logo — create a simple logo using Canva or an AI logo generator
+One-liner — a clear sentence explaining what your app does
+Blurb — a short 2–3 sentence description of your product and its
+value (AI can help write this)
+These can also be reused as your app’s metadata (site description,
+social previews, etc.)
+
+--- PAGE 28 ---
+Create your brand identity
+For marketing content:
+Use AI tools (e.g. Pomelli) to generate:
+•
+•
+•
+product visuals
+social media assets
+simple promotional content
+You can also record demo videos and take screenshots of your app to
+showcase it.
+
+--- PAGE 29 ---
+For your sub
+mission
+•
+•
+•
+•
+•
+•
+•
+Project name
+One-liner
+Short description (blurb)
+AI tools & integrations used
+GitHub repository
+Live product URL (must be in
+production)
+Loom video (max 5 minutes)
+Submission Deadline:
+9am CET, Monday April Xth
+Submission: link
+
+--- PAGE 30 ---
+Pub
+lic presentations
+Demo Day: Monday Presentation details
+You can present on Monday
+(optional), because we are all
+around the world, we will vote
+on a time that fits everyone
+One or two slide as intro on
+the product. Rest of the time
+showing the demo.
+3 minutes each, with 1 minute
+for questions
+Requirement: only submitted
+project can present. Winners are
+decided from the submissions,
+not your public pitch session
+
+--- PAGE 31 ---
+Thank you!
+Participants
+Telegram Group:
+(QR goes here code)
+Follow STON.fi
+on X
+My handle
+
+--- PAGE 32 ---
+
