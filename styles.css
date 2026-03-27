@@ -842,6 +842,10 @@ main {
     padding-top: 0;
   }
 
+  main {
+    padding-top: 88px;
+  }
+
   .topbar,
   .hero,
   .content-grid,
@@ -851,11 +855,16 @@ main {
   }
 
   .topbar {
-    min-height: auto;
-    gap: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 68px;
+    gap: 10px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: calc(env(safe-area-inset-top) + 8px) 12px 8px 16px;
   }
 
   .hero h1,
@@ -878,10 +887,15 @@ main {
   .hero-actions {
     flex-direction: row;
     align-items: center;
+    gap: 8px;
   }
 
   .button {
     width: auto;
+    min-height: 34px;
+    padding: 0 14px;
+    font-size: 0.78rem;
+    border-radius: 12px;
   }
 
   .countdown-timer {
