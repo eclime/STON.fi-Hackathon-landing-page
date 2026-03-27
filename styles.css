@@ -901,7 +901,8 @@ main {
   .hero-ring-bottom-left,
   .hero-ring-top-right,
   .hero-ring-bottom-right,
-  .hero-star {
+  .hero-star,
+  .hero-coin {
     display: none;
   }
 
