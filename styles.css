@@ -863,12 +863,26 @@ main {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 50;
     min-height: 68px;
     gap: 10px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: calc(env(safe-area-inset-top) + 8px) 12px 8px 16px;
+    background: #ffffff;
+  }
+
+  .topbar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -120px;
+    height: 120px;
+    background: #ffffff;
+    pointer-events: none;
+    z-index: -1;
   }
 
   .hero h1,
