@@ -20,7 +20,7 @@
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <a class="brand" href="#hero" aria-label="STON.fi Vibe Coding Hackathon home">
+        <a class="brand" href="#" aria-label="STON.fi Vibe Coding Hackathon home">
           <img class="brand-logo" src="./assets/ston-fi-light.svg" alt="STON.fi" />
         </a>
         <nav class="nav-links" aria-label="Primary">
@@ -30,7 +30,7 @@
           <a href="#setup">Setup</a>
         </nav>
         <div class="nav-actions">
-          <a class="button button-primary" href="#agenda">Apply Now</a>
+          <a class="button button-primary" href="https://luma.com/qpjdp3jq" target="_blank" rel="noreferrer">Apply Now</a>
           <a class="button button-secondary" href="https://ston.fi/" target="_blank" rel="noreferrer">Go to Main Site</a>
         </div>
       </header>
@@ -70,7 +70,7 @@
           <div class="hero-copy">
             <p class="eyebrow brand-eyebrow">STON.fi Vibe Coding Hackathon</p>
             <div class="countdown" aria-live="polite">
-              <p class="countdown-label">hackathon begins in</p>
+              <p class="countdown-label">hackathon begins april 16th, 2026</p>
               <div class="countdown-timer" id="countdown-timer">
                 <div class="countdown-unit">
                   <span class="countdown-value" data-unit="days">00</span>
@@ -376,21 +376,21 @@
               Instantly swap Toncoin for any coin<br />or token at the best rate
             </p>
             <div class="footer-socials" aria-label="STON.fi social links">
-              <a class="footer-icon" href="https://t.me" target="_blank" rel="noreferrer"><img src="./assets/footer-telegram.svg" alt="Telegram" /></a>
-              <a class="footer-icon" href="https://t.me" target="_blank" rel="noreferrer"><img src="./assets/footer-telegram-chat.svg" alt="Telegram chat" /></a>
-              <a class="footer-icon" href="https://x.com" target="_blank" rel="noreferrer"><img src="./assets/footer-twitter.svg" alt="Twitter" /></a>
-              <a class="footer-icon" href="https://github.com" target="_blank" rel="noreferrer"><img src="./assets/footer-github.svg" alt="GitHub" /></a>
-              <a class="footer-icon" href="https://discord.gg" target="_blank" rel="noreferrer"><img src="./assets/footer-discord.svg" alt="Discord" /></a>
-              <a class="footer-icon" href="https://www.reddit.com" target="_blank" rel="noreferrer"><img src="./assets/footer-reddit.svg" alt="Reddit" /></a>
-              <a class="footer-icon" href="https://www.linkedin.com" target="_blank" rel="noreferrer"><img src="./assets/footer-linkedin.svg" alt="LinkedIn" /></a>
-              <a class="footer-icon" href="https://www.youtube.com" target="_blank" rel="noreferrer"><img src="./assets/footer-youtube.svg" alt="YouTube" /></a>
+              <a class="footer-icon" href="https://t.me/stonfidex" target="_blank" rel="noreferrer"><img src="./assets/footer-telegram.svg" alt="Telegram" /></a>
+              <a class="footer-icon" href="https://t.me/stonfichat" target="_blank" rel="noreferrer"><img src="./assets/footer-telegram-chat.svg" alt="Telegram chat" /></a>
+              <a class="footer-icon" href="https://x.com/ston_fi" target="_blank" rel="noreferrer"><img src="./assets/footer-twitter.svg" alt="Twitter" /></a>
+              <a class="footer-icon" href="https://github.com/ston-fi" target="_blank" rel="noreferrer"><img src="./assets/footer-github.svg" alt="GitHub" /></a>
+              <a class="footer-icon" href="https://discord.com/invite/bdmaGV6qUw" target="_blank" rel="noreferrer"><img src="./assets/footer-discord.svg" alt="Discord" /></a>
+              <a class="footer-icon" href="https://www.reddit.com/r/Stonfiers/" target="_blank" rel="noreferrer"><img src="./assets/footer-reddit.svg" alt="Reddit" /></a>
+              <a class="footer-icon" href="https://www.linkedin.com/company/ston-fi/" target="_blank" rel="noreferrer"><img src="./assets/footer-linkedin.svg" alt="LinkedIn" /></a>
+              <a class="footer-icon" href="https://www.youtube.com/@stonfidex" target="_blank" rel="noreferrer"><img src="./assets/footer-youtube.svg" alt="YouTube" /></a>
             </div>
           </div>
 
           <nav class="footer-nav" aria-label="Footer">
             <a href="https://app.ston.fi" target="_blank" rel="noreferrer">Swap</a>
-            <a href="https://app.ston.fi" target="_blank" rel="noreferrer">Pools</a>
-            <a href="https://app.ston.fi" target="_blank" rel="noreferrer">Stake</a>
+            <a href="https://app.ston.fi/pools" target="_blank" rel="noreferrer">Pools</a>
+            <a href="https://app.ston.fi/staking" target="_blank" rel="noreferrer">Stake</a>
           </nav>
         </div>
 
@@ -463,6 +463,13 @@
       const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
 
       if (navLinks.length > 0) {
+        const sections = navLinks
+          .map((link) => {
+            const hash = link.getAttribute("href");
+            return hash ? document.querySelector(hash) : null;
+          })
+          .filter(Boolean);
+
         const setActiveNavLink = (hash) => {
           navLinks.forEach((link) => {
             link.classList.toggle("is-active", link.getAttribute("href") === hash);
@@ -475,11 +482,34 @@
           });
         });
 
-        setActiveNavLink(window.location.hash || "#qualification");
-
         window.addEventListener("hashchange", () => {
-          setActiveNavLink(window.location.hash || "#qualification");
+          if (window.location.hash) {
+            setActiveNavLink(window.location.hash);
+          }
         });
+
+        const updateActiveNavFromScroll = () => {
+          const topbar = document.querySelector(".topbar");
+          const offset = (topbar ? topbar.offsetHeight : 0) + 24;
+
+          if (window.scrollY < 40) {
+            setActiveNavLink("");
+            return;
+          }
+
+          let currentId = "";
+
+          sections.forEach((section) => {
+            if (section.offsetTop - offset <= window.scrollY) {
+              currentId = `#${section.id}`;
+            }
+          });
+
+          setActiveNavLink(currentId);
+        };
+
+        window.addEventListener("scroll", updateActiveNavFromScroll, { passive: true });
+        updateActiveNavFromScroll();
       }
     </script>
   </body>
